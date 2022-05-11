@@ -8,9 +8,7 @@ fetch('https://api.adviceslip.com/advice')
         adviceNo.innerHTML = data.slip.id;
     })
 
-const randomBtn = document.getElementById('randomizer-btn');
-
-randomBtn.addEventListener('click', () => {
+function adviceGen() {
     fetch('https://api.adviceslip.com/advice')
         .then(res => res.json())
         .then(data => {
@@ -21,4 +19,4 @@ randomBtn.addEventListener('click', () => {
             adviceContainer.innerHTML = `"${advice}"`;
             adviceNo.innerHTML = data.slip.id;
         })
-})
+}

@@ -20,14 +20,15 @@
 
 <body>
 
-  <div class="advice-container">
+  <div role="main" class="advice-container">
     <h3 class="advice-no">ADVICE NO # <span id="advice-no"></span></h3>
 
     <p class="advice-text"></p>
 
     <img class="pattern-divider" src="./images/pattern-divider-desktop.svg" alt="pattern-divider">
   </div>
-  <button class="randomizer-btn" id="randomizer-btn"><img src="./images/icon-dice.svg" alt="random button"></button>
+  <button role="button" onclick="adviceGen()" class="randomizer-btn" id="randomizer-btn"><img
+      src="./images/icon-dice.svg" alt="random button"></button>
   <script src="main.js"></script>
 </body>
 
